@@ -200,15 +200,15 @@ Installation MariaDB `
 `mysql_secure_installation `
 
 # Activation
-`systemctl enable --now mariadb `
-Création base de données
-sql
+`systemctl enable --now mariadb ` 
+
+# Création base de données sql
 `CREATE DATABASE efrei_projet;
 CREATE USER 'efrei_user'@'192.168.10.%' IDENTIFIED BY 'Adm3Pl2!';
 GRANT SELECT, INSERT, UPDATE, DELETE ON efrei_projet.* TO 'efrei_user'@'192.168.10.%';
 FLUSH PRIVILEGES; `
 
-Vérifications
+
 # Voir les services actifs
 `systemctl list-units --type=service --state=running`
 
@@ -221,16 +221,19 @@ Vérifications
 
 
 # Équipe
-Sherine EDEL	     
+Sherine EDEL	
+
 Syrine ABDELBASSET	
+
 Lina FASSI	
+
 Mounia DJA DAOUADJI	
 
 # Conclusion
-Objectif	Statut
-Segmentation réseau (4 zones)	
-Deny by default	
-HAProxy + Keepalived (VIP)	
-Hardening AlmaLinux (CIS Level 1)	
-Isolation BDD	
-Tests de sécurité validés	
+Objectif	Statut :
+Segmentation réseau (4 zones),
+Deny by default	,
+HAProxy + Keepalived (VIP),
+Hardening AlmaLinux (CIS Level 1),	
+Isolation BDD,
+Tests de sécurité validés.
