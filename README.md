@@ -218,33 +218,15 @@ Vérifications
 # Tester la connectivité
 `curl -v telnet://IP:PORT`
 
-Contenu du dépôt
-Fichier	Description
-cahier-des-charges.pdf	Exigences techniques et barème d’évaluation
-commandes-installation.md	Toutes les commandes utilisées
-presentation-securisation.pdf	Support de soutenance (schémas, démos)
-screenshots/	11 captures d’écran techniques
-Détail des captures
-Fichier	Contenu
-01-pfsense-interfaces.png	Interfaces pfSense (6 réseaux)
-02-firewall-rules-frontend.png	Règles firewall zone FRONTEND
-03-firewall-rules-dmz.png	Règles firewall zone DMZ
-04-nat-port-forward.png	NAT / Port forwarding
-05-vip-keepalived-active.png	VIP Keepalived active
-06-services-actifs-web.png	Services système actifs
-07-mysql-ecoute.png	MySQL écoute sur port 3306
-08-acces-bdd-timeout.png	Test accès BDD bloqué
-09-ssh-blocked.png	Test SSH bloqué
-10-permissions-mysql.png	Permissions utilisateur MySQL
-11-mariadb-status.png	Statut service MariaDB
 
-Équipe
+
+# Équipe
 Sherine EDEL	     
 Syrine ABDELBASSET	
 Lina FASSI	
 Mounia DJA DAOUADJI	
 
-Conclusion
+# Conclusion
 Objectif	Statut
 Segmentation réseau (4 zones)	
 Deny by default	
@@ -252,12 +234,3 @@ HAProxy + Keepalived (VIP)
 Hardening AlmaLinux (CIS Level 1)	
 Isolation BDD	
 Tests de sécurité validés	
-
- Liens utiles
-Documentation pfSense
-
-HAProxy Documentation
-
-Keepalived Official
-
-CIS Benchmarks
